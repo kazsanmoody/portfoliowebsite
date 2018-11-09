@@ -13,7 +13,7 @@ html, body{
 .background{
     width: 100%;
     height: 100%;
-    background-image: url(../images/portbackground.jpg);
+    background-image: url(../images/galaxy.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     position: relative;
@@ -21,7 +21,7 @@ html, body{
 
 }
 .nav{
-    width: 350px;
+    width: 300px;
     height: auto;
     position: absolute;
     top: 20%;
@@ -35,7 +35,7 @@ html, body{
     font-weight: bold;
     height: 90px;
     margin: 5px 0;
-    float: left;
+    /*float: left;*/
     display: inline-block;
     background-color: black;
     color: white;
@@ -87,21 +87,22 @@ a.active, .nav a:hover{
 }
 .home h3{
     font-size: 28px;
-    padding: 5px 0;
-    opacity: 0.6;
+    padding: 3px 0;
+    /*opacity: 0.6;*/
+    color: white;
 }
 .aboutme{
     position: absolute;
     right: 0;
-    top: 10px;
+    top: 50px;
     color: white;
-    font-family:century gothic;
+    font-family: "Courier New", Courier, monospace;
     padding: 0 60px;
     display: none;
 }
 
 .aboutme p{
-    font-size: 18px;
+    font-size: 25px;
     line-height: 28px;
     margin-bottom: 15px;
 }
@@ -133,7 +134,7 @@ a.active, .nav a:hover{
 .inputtext{
     width: 55%;
     height: 70px;
-    border: 3px solid black;
+    border: 3px solid white;
     color: white;
     background-color: rgba(0,0,0,0.7);
     font-size: 20px;
@@ -145,7 +146,7 @@ a.active, .nav a:hover{
 .inputmessage{
     width: 65%;
     height: 135px;
-    border: 3px solid black;
+    border: 3px solid white;
     color: white;
     background-color: rgba(0,0,0,0.7);
     font-size: 20px;
@@ -165,4 +166,9 @@ a.active, .nav a:hover{
     clear: both;
     margin-top: 25px;
 
+}
+.aboutme .image{
+    position: center;
+    width: 325px;
+    height: 200px;
 }
