@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+</head>
+<body>
+
+<div class="background">
+
+<div class="nav">
+    <a class="a active" href="#">HOME</a>
+    <a class="b" href="#">ABOUT ME</a>
+    <a class="c" href="#">PROJECTS</a>
+    <a class="d" href="#">CONTACT ME</a>   
+</div>
+
+<div class="content">
+    <div class="home">
+        <h1>Kazsan Moody</h1>
+        <h3>Developer</h3>
+    </div>
+
+    <div class="aboutme">
+            <p>Hello my name is Kazsan Moody,
+            <br>I am 23 years young and only getting youger!
+            <br>I have always had a very vibrant and bubbly personality
+            <br>I always gave my mother and teachers a super hard time!
+            <br>It was at the age of 7 I was diagnosed with ADHD!
+            <br>ADHD has always been a stuggle for me throughout life, but as I got older I learned to cope with my disability.
+            and life has gotten easier!</p>
+       
+    </div>
+
+    <div class="projects">
+    <h1> Welcome to my project page</h1>
+        <div class="image">
+            <img src="">
+        </div>
+    </div>
+    <div class="contactme">
+        <div class="form">
+            <form action="" method="post">
+               <input type="text" name="" class="inputtext" value="First Name">
+               <input type="text" name="" class="inputtext" value="Last Name">
+               <input type="text" name="" class="inputtext" value="Email">
+               <textarea cols="4" rows="6" class="inputmessage">Type Your Message Here</textarea>
+               <input type="button" name="" class="confirmbutton" value="Confirm">
+            </form>
+        </div>
+    </div>
+
+
+</div>
+
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('a').click(function(){
+            //alert("You clicked me");
+            var selected = $(this);
+            $('a').removeClass('active');
+            $(selected).addClass('active');
+        });
+    
+        var $a = $('.a'),
+        $b = $('.b'),
+        $c = $('.c'),
+        $d = $('.d'),
+        $home = $('.home'),
+        $aboutme = $('.aboutme'),
+        $projects = $('.projects'),
+        $contactme = $('.contactme');
+
+        $a.click(function(){
+            $home.fadeIn();
+            $aboutme.fadeOut();
+            $projects.fadeOut();
+            $contactme.fadeOut();
+    });
+        $b.click(function(){
+            $aboutme.fadeIn();
+            $home.fadeOut();
+            $projects.fadeOut();
+            $contactme.fadeOut();
+    });
+    
+        $c.click(function(){
+            $projects.fadeIn();
+            $home.fadeOut();
+            $aboutme.fadeOut();
+            $contactme.fadeOut();
+    });
+
+        $d.click(function(){
+            $contactme.fadeIn();
+            $home.fadeOut();
+            $projects.fadeOut();
+            $aboutme.fadeOut();
+
+
+    });
+});
+</script>
+ </body>
+</html>
